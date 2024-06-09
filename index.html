@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Screen Share</title>
+    <style>
+        #localVideo, #remoteVideo {
+            width: 45%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebRTC Screen Share Example</h1>
+    <select id="cameraSelect"></select>
+    <video id="localVideo" autoplay playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+    <button id="startButton">Start Call</button>
+    <button id="shareScreenButton">Share Screen</button>
+    <textarea id="localSDP" placeholder="Local SDP"></textarea>
+    <textarea id="remoteSDP" placeholder="Remote SDP"></textarea>
+    <textarea id="localICE" placeholder="Local ICE Candidates"></textarea>
+    <textarea id="remoteICE" placeholder="Remote ICE Candidates"></textarea>
+    <button id="setRemoteSDPButton">Set Remote SDP</button>
+    <button id="addRemoteICEButton">Add Remote ICE</button>
+    <script src="main.js"></script>
+</body>
+</html>
